@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 2.8.6)
+project(post-install CXX)
 include(asv_cmake_defaults)
 
 set(instloc "${CMAKE_INSTALL_PREFIX}")
