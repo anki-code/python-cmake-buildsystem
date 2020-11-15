@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.8.6)
 
+project(Python C ASM)
+
 set(PYTHON_VERSION "3.8.6" CACHE STRING "The version of Python to build.")
 
 ###############
@@ -33,8 +35,6 @@ if(APPLE)
   set(MACOSX_DEPLOYMENT_TARGET ${CMAKE_OSX_DEPLOYMENT_TARGET})
   message(STATUS "${_msg} - ${MACOSX_DEPLOYMENT_TARGET}")
 endif()
-
-project(Python C ASM)
 
 if(POLICY CMP0042)
     cmake_policy(SET CMP0042 OLD)
